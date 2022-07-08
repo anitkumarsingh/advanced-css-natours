@@ -8,6 +8,8 @@ dark green:#28b485
 $primary-light: #7ed56f;
 $primary-medium: #55c57a;
 $primary-dark: #28b485;
+$light-txt-color: #777;
+$txt-color: #fff;
 
 *,
 *::after,
@@ -26,7 +28,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777;
+  color: $light-txt-color;
   padding: 3rem;
   box-sizing: border-box;
 }
@@ -60,7 +62,7 @@ body {
 }
 
 .primary-heading {
-  color: #fff;
+  color: $txt-color;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 4rem;
@@ -150,8 +152,8 @@ body {
 }
 
 .btn--white {
-  color: #777;
-  background-color: #fff;
+  color: $light-txt-color;
+    background-color: $txt-color;
 }
 
 .btn::after {
@@ -168,7 +170,7 @@ body {
 }
 
 .btn--white::after {
-  background-color: #fff;
+  background-color: $txt-color;
 }
 
 .btn:hover::after {
