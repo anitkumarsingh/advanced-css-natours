@@ -196,6 +196,38 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
   transform: translateY(0px); }
 
+/* line 1, scss/components/_composition.scss */
+.composition {
+  position: relative; }
+  /* line 3, scss/components/_composition.scss */
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 0.2rem 40px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    /* line 9, scss/components/_composition.scss */
+    .composition__photo--p1 {
+      left: 0px;
+      top: -2rem; }
+    /* line 13, scss/components/_composition.scss */
+    .composition__photo--p2 {
+      right: 0px;
+      top: 2rem; }
+    /* line 17, scss/components/_composition.scss */
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    /* line 21, scss/components/_composition.scss */
+    .composition__photo:hover {
+      outline: 1.5rem solid #28b485;
+      transform: scale(1.2);
+      box-shadow: 0 1.2rem 40px rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  /* line 28, scss/components/_composition.scss */
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
 /* line 1, scss/layouts/_header.scss */
 .header {
   height: 95vh;
