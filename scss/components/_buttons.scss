@@ -50,3 +50,26 @@
 		animation-fill-mode: backwards;
 	}
 }
+
+.btn-text{
+	&:link,
+	&:visited{
+		text-decoration: none;
+		color: $primary-dark;
+		display: inline-block;
+		font-size: $default-font-size;
+		border-bottom: 1px solid $primary-dark;
+		padding: 4px;
+		transition: all .2s;
+	}
+	&:hover{
+		box-shadow: 0 .1rem 2rem rgba($color-black, .6);
+		background-color: $primary-dark;
+		color: $txt-color;
+		transform: translateY(-2px);
+	}
+	&:active{
+		box-shadow: 0 .5rem 1rem rgba($color-black, .6);
+		transform: translateY(0px);
+	}
+}
