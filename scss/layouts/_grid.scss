@@ -1,14 +1,14 @@
 .row {
 	max-width: $grid-width;
-	background-color: $txt-color;
+	// background-color: $txt-color;
 	margin: 0 auto;
 	&:not(:last-child) {
     margin-bottom: $gutter-vertical;
 	}
   @include clearfix;
   [class^="col-"]{
-    background-color: orange;
-    color:$txt-color;
+    // background-color: orange;
+    // color:$txt-color;
     text-align: center;
     padding: 1rem 0;
     float: left;
