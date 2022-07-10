@@ -204,7 +204,6 @@ body {
   height: 45rem; }
   /* line 6, scss/components/_card.scss */
   .card__side {
-    background-color: orange;
     color: #fff;
     font-size: 5rem;
     height: 45rem;
@@ -213,18 +212,20 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; }
-    /* line 17, scss/components/_card.scss */
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5em 4rem rgba(0, 0, 0, 0.15); }
+    /* line 18, scss/components/_card.scss */
     .card__side--front {
-      background-color: orange; }
-    /* line 20, scss/components/_card.scss */
+      background-color: #fff; }
+    /* line 21, scss/components/_card.scss */
     .card__side--back {
-      background-color: green;
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
       transform: rotateY(180deg); }
-  /* line 26, scss/components/_card.scss */
+  /* line 27, scss/components/_card.scss */
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
-  /* line 29, scss/components/_card.scss */
+  /* line 30, scss/components/_card.scss */
   .card:hover .card__side--back {
     transform: rotateY(0); }
 

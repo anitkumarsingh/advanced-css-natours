@@ -4,7 +4,6 @@
 	position: relative;
 	height: 45rem;
 	&__side {
-		background-color: orange;
 		color: #fff;
 		font-size: 5rem;
 		height: 45rem;
@@ -14,11 +13,13 @@
 		left: 0;
 		width: 100%;
 		backface-visibility: hidden;
+		border-radius: 3px;
+		box-shadow: 0 1.5em 4rem rgba($color-black, .15);
 		&--front{
-			background-color: orange;
+			background-color: $txt-color;
 		}
 		&--back{
-			background-color: green;
+			background-image:linear-gradient(to right bottom,$secondary-light,$secondary-dark);
 			transform: rotateY(180deg);
 		}
 	}
