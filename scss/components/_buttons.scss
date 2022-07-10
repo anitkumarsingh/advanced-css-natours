@@ -31,6 +31,13 @@
 			background-color: $txt-color;
 		}
 	}
+	&--green {
+		color: $txt-color;
+		background-color: $primary-dark;
+		&::after {
+			background-color: $primary-dark;
+		}
+	}
 
 	&::after {
 		content: '';

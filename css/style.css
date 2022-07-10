@@ -125,6 +125,10 @@ body {
 .u-margin-bottom-large {
   margin-bottom: 8rem; }
 
+/* line 5, scss/base/_utilities.scss */
+.u-margin-top-large {
+  margin-bottom: 8rem; }
+
 /* line 2, scss/components/_buttons.scss */
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -157,7 +161,15 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
-/* line 35, scss/components/_buttons.scss */
+/* line 34, scss/components/_buttons.scss */
+.btn--green {
+  color: #fff;
+  background-color: #28b485; }
+  /* line 37, scss/components/_buttons.scss */
+  .btn--green::after {
+    background-color: #28b485; }
+
+/* line 42, scss/components/_buttons.scss */
 .btn::after {
   content: '';
   display: inline-block;
@@ -170,12 +182,12 @@ body {
   z-index: -1;
   transition: all 0.4s; }
 
-/* line 48, scss/components/_buttons.scss */
+/* line 55, scss/components/_buttons.scss */
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
-/* line 55, scss/components/_buttons.scss */
+/* line 62, scss/components/_buttons.scss */
 .btn-text:link, .btn-text:visited {
   text-decoration: none;
   color: #28b485;
@@ -185,14 +197,14 @@ body {
   padding: 4px;
   transition: all .2s; }
 
-/* line 65, scss/components/_buttons.scss */
+/* line 72, scss/components/_buttons.scss */
 .btn-text:hover {
   box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.6);
   background-color: #28b485;
   color: #fff;
   transform: translateY(-2px); }
 
-/* line 71, scss/components/_buttons.scss */
+/* line 78, scss/components/_buttons.scss */
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
   transform: translateY(0px); }
@@ -220,31 +232,39 @@ body {
       background-color: #fff; }
     /* line 20, scss/components/_card.scss */
     .card__side--back {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
       transform: rotateY(180deg); }
-  /* line 30, scss/components/_card.scss */
+      /* line 22, scss/components/_card.scss */
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      /* line 29, scss/components/_card.scss */
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #55c57a, #28b485); }
+      /* line 36, scss/components/_card.scss */
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2993ff, #5643fa); }
+  /* line 46, scss/components/_card.scss */
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
-  /* line 33, scss/components/_card.scss */
+  /* line 49, scss/components/_card.scss */
   .card:hover .card__side--back {
     transform: rotateY(0); }
-  /* line 36, scss/components/_card.scss */
+  /* line 52, scss/components/_card.scss */
   .card__picture {
     background-size: cover;
     background-blend-mode: screen;
     height: 23rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
-    /* line 42, scss/components/_card.scss */
+    /* line 58, scss/components/_card.scss */
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg"); }
-    /* line 50, scss/components/_card.scss */
+    /* line 66, scss/components/_card.scss */
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-4.jpg"); }
-    /* line 58, scss/components/_card.scss */
+      background-image: linear-gradient(to right bottom, #55c57a, #28b485), url("../img/nat-6.jpg"); }
+    /* line 70, scss/components/_card.scss */
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-4.jpg"); }
-  /* line 67, scss/components/_card.scss */
+      background-image: linear-gradient(to right bottom, #2993ff, #5643fa), url("../img/nat-7.jpg"); }
+  /* line 75, scss/components/_card.scss */
   .card__heading {
     font-size: 2.8rem;
     color: #fff;
@@ -255,28 +275,34 @@ body {
     top: 12rem;
     right: 2rem;
     width: 75%; }
-  /* line 78, scss/components/_card.scss */
+  /* line 86, scss/components/_card.scss */
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
-    /* line 84, scss/components/_card.scss */
+    /* line 92, scss/components/_card.scss */
     .card__heading-span--1 {
       background-image: linear-gradient(to right, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
-  /* line 92, scss/components/_card.scss */
+    /* line 99, scss/components/_card.scss */
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right, rgba(85, 197, 122, 0.85), rgba(40, 180, 133, 0.85)); }
+    /* line 106, scss/components/_card.scss */
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right, rgba(41, 147, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+  /* line 114, scss/components/_card.scss */
   .card__details {
     padding: 2rem; }
-    /* line 94, scss/components/_card.scss */
+    /* line 116, scss/components/_card.scss */
     .card__details ul {
       list-style: none; }
-      /* line 96, scss/components/_card.scss */
+      /* line 118, scss/components/_card.scss */
       .card__details ul li {
         font-size: 1.8rem;
         text-align: center; }
-        /* line 99, scss/components/_card.scss */
+        /* line 121, scss/components/_card.scss */
         .card__details ul li:not(:last-child) {
           margin-bottom: 1rem; }
-  /* line 105, scss/components/_card.scss */
+  /* line 127, scss/components/_card.scss */
   .card__price-box {
     position: absolute;
     top: 50%;
@@ -285,10 +311,10 @@ body {
     color: #eee;
     text-align: center;
     width: 75%; }
-    /* line 113, scss/components/_card.scss */
+    /* line 135, scss/components/_card.scss */
     .card__price-box--only {
       font-size: 2rem; }
-    /* line 116, scss/components/_card.scss */
+    /* line 138, scss/components/_card.scss */
     .card__price-box--value {
       font-size: 4rem;
       margin-bottom: 1.5rem; }

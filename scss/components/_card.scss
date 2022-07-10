@@ -18,12 +18,28 @@
 			background-color: $txt-color;
 		}
 		&--back {
-			background-image: linear-gradient(
-				to right bottom,
-				$secondary-light,
-				$secondary-dark
-			);
 			transform: rotateY(180deg);
+			&-1 {
+				background-image: linear-gradient(
+					to right bottom,
+					$secondary-light,
+					$secondary-dark
+				);
+			}
+			&-2 {
+				background-image: linear-gradient(
+					to right bottom,
+					$primary-medium,
+					$primary-dark
+				);
+			}
+			&-3 {
+				background-image: linear-gradient(
+					to right bottom,
+					$tertiary-light,
+					$tertiary-dark
+				);
+			}
 		}
 	}
 
@@ -48,20 +64,12 @@
 				url('../img/nat-5.jpg');
 		}
 		&--2 {
-			background-image: linear-gradient(
-					to right bottom,
-					$secondary-light,
-					$secondary-dark
-				),
-				url('../img/nat-4.jpg');
+			background-image: linear-gradient(to right bottom, $primary-medium, $primary-dark),
+				url('../img/nat-6.jpg');
 		}
 		&--3 {
-			background-image: linear-gradient(
-					to right bottom,
-					$secondary-light,
-					$secondary-dark
-				),
-				url('../img/nat-4.jpg');
+			background-image: linear-gradient(to right bottom, $tertiary-light, $tertiary-dark),
+				url('../img/nat-7.jpg');
 		}
 	}
 	&__heading {
@@ -88,6 +96,20 @@
 				rgba($secondary-dark, 0.85)
 			);
 		}
+		&--2 {
+			background-image: linear-gradient(
+				to right,
+				rgba($primary-medium, 0.85),
+				rgba($primary-dark, 0.85)
+			);
+		}
+		&--3 {
+			background-image: linear-gradient(
+				to right,
+				rgba($tertiary-light, 0.85),
+				rgba($tertiary-dark, 0.85)
+			);
+		}
 	}
 	&__details {
 		padding: 2rem;
@@ -96,26 +118,26 @@
 			li {
 				font-size: 1.8rem;
 				text-align: center;
-				&:not(:last-child){
-      	margin-bottom: 1rem;
+				&:not(:last-child) {
+					margin-bottom: 1rem;
 				}
-			}	
+			}
 		}
 	}
-	&__price-box{
-		position:absolute;
+	&__price-box {
+		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 		color: $light-grey-color-2;
 		text-align: center;
 		width: 75%;
-		&--only{
-    font-size:2rem;
+		&--only {
+			font-size: 2rem;
 		}
-		&--value{
-     font-size: 4rem;
-		 margin-bottom: 1.5rem;
+		&--value {
+			font-size: 4rem;
+			margin-bottom: 1.5rem;
 		}
 	}
 }
