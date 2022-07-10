@@ -88,23 +88,24 @@ body {
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   transition: all .2s; }
-  /* line 44, scss/base/_typography.scss */
+  /* line 45, scss/base/_typography.scss */
   .secondary-heading:hover {
     transform: skewY(5deg) skewX(10deg) scale(1.1);
     text-shadow: 0.5rem 2rem 6rem rgba(0, 0, 0, 0.4); }
 
-/* line 49, scss/base/_typography.scss */
+/* line 50, scss/base/_typography.scss */
 .tertiary-heading {
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 700; }
 
-/* line 54, scss/base/_typography.scss */
+/* line 55, scss/base/_typography.scss */
 .paragraph {
   font-size: 1.6rem; }
-  /* line 56, scss/base/_typography.scss */
+  /* line 57, scss/base/_typography.scss */
   .paragraph:not(:last-child) {
     margin-bottom: 5rem; }
 
@@ -201,33 +202,80 @@ body {
   perspective: 1500px;
   -moz-perspective: 1500px;
   position: relative;
-  height: 45rem; }
+  height: 48rem; }
   /* line 6, scss/components/_card.scss */
   .card__side {
-    color: #fff;
-    font-size: 5rem;
-    height: 45rem;
-    transition: all 0.9s;
+    height: 48rem;
+    transition: all 1.5s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0 1.5em 4rem rgba(0, 0, 0, 0.15); }
-    /* line 18, scss/components/_card.scss */
+    /* line 17, scss/components/_card.scss */
     .card__side--front {
       background-color: #fff; }
-    /* line 21, scss/components/_card.scss */
+    /* line 20, scss/components/_card.scss */
     .card__side--back {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
       transform: rotateY(180deg); }
-  /* line 27, scss/components/_card.scss */
-  .card:hover .card__side--front {
-    transform: rotateY(180deg); }
   /* line 30, scss/components/_card.scss */
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  /* line 33, scss/components/_card.scss */
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  /* line 36, scss/components/_card.scss */
+  .card__picture {
+    background-size: cover;
+    background-blend-mode: screen;
+    height: 23rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+    /* line 42, scss/components/_card.scss */
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg"); }
+    /* line 50, scss/components/_card.scss */
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-4.jpg"); }
+    /* line 58, scss/components/_card.scss */
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-4.jpg"); }
+  /* line 67, scss/components/_card.scss */
+  .card__heading {
+    font-size: 2.8rem;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+  /* line 78, scss/components/_card.scss */
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    /* line 84, scss/components/_card.scss */
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+  /* line 92, scss/components/_card.scss */
+  .card__details {
+    padding: 2rem; }
+    /* line 94, scss/components/_card.scss */
+    .card__details ul {
+      list-style: none; }
+      /* line 96, scss/components/_card.scss */
+      .card__details ul li {
+        font-size: 1.8rem;
+        text-align: center; }
+        /* line 99, scss/components/_card.scss */
+        .card__details ul li:not(:last-child) {
+          margin-bottom: 1rem; }
 
 /* line 1, scss/components/_composition.scss */
 .composition {
@@ -287,16 +335,17 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  /* line 10, scss/layouts/_header.scss */
+  /* line 11, scss/layouts/_header.scss */
   .header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem; }
-  /* line 15, scss/layouts/_header.scss */
+  /* line 16, scss/layouts/_header.scss */
   .header__logo {
     height: 3.5rem; }
-  /* line 18, scss/layouts/_header.scss */
+  /* line 19, scss/layouts/_header.scss */
   .header__text-box {
     position: absolute;
     top: 40%;
