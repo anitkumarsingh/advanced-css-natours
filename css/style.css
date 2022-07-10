@@ -276,6 +276,22 @@ body {
         /* line 99, scss/components/_card.scss */
         .card__details ul li:not(:last-child) {
           margin-bottom: 1rem; }
+  /* line 105, scss/components/_card.scss */
+  .card__price-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #eee;
+    text-align: center;
+    width: 75%; }
+    /* line 113, scss/components/_card.scss */
+    .card__price-box--only {
+      font-size: 2rem; }
+    /* line 116, scss/components/_card.scss */
+    .card__price-box--value {
+      font-size: 4rem;
+      margin-bottom: 1.5rem; }
 
 /* line 1, scss/components/_composition.scss */
 .composition {
