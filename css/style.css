@@ -196,6 +196,38 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
   transform: translateY(0px); }
 
+/* line 1, scss/components/_card.scss */
+.card {
+  perspective: 1500px;
+  -moz-perspective: 1500px;
+  position: relative;
+  height: 45rem; }
+  /* line 6, scss/components/_card.scss */
+  .card__side {
+    background-color: orange;
+    color: #fff;
+    font-size: 5rem;
+    height: 45rem;
+    transition: all 0.9s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    /* line 17, scss/components/_card.scss */
+    .card__side--front {
+      background-color: orange; }
+    /* line 20, scss/components/_card.scss */
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg); }
+  /* line 26, scss/components/_card.scss */
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  /* line 29, scss/components/_card.scss */
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+
 /* line 1, scss/components/_composition.scss */
 .composition {
   position: relative; }
