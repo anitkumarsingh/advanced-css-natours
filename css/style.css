@@ -114,7 +114,7 @@ body {
 
 /* line 2, scss/base/_utilities.scss */
 .u-margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 1.3rem; }
 
 /* line 3, scss/base/_utilities.scss */
 .u-margin-bottom-medium {
@@ -228,6 +228,25 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+/* line 1, scss/components/_feature.scss */
+.feature__box {
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 3px;
+  transition: all .2s; }
+  /* line 8, scss/components/_feature.scss */
+  .feature__box--icon {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
+  /* line 15, scss/components/_feature.scss */
+  .feature__box:hover {
+    transform: translateY(-1.5rem) scale(1); }
+
 /* line 1, scss/layouts/_header.scss */
 .header {
   height: 95vh;
@@ -295,3 +314,14 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+/* line 7, scss/pages/_home.scss */
+.section__feature {
+  padding: 20rem 0;
+  background-image: linear-gradient(rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../img/nat-4.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem; }
+  /* line 14, scss/pages/_home.scss */
+  .section__feature > * {
+    transform: skewY(7deg); }
