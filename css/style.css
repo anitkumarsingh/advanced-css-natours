@@ -86,7 +86,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #C8B6E2, #495C83);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -164,10 +164,10 @@ body {
 /* line 34, scss/components/_buttons.scss */
 .btn--green {
   color: #fff;
-  background-color: #28b485; }
+  background-color: #495C83; }
   /* line 37, scss/components/_buttons.scss */
   .btn--green::after {
-    background-color: #28b485; }
+    background-color: #495C83; }
 
 /* line 42, scss/components/_buttons.scss */
 .btn::after {
@@ -190,17 +190,17 @@ body {
 /* line 62, scss/components/_buttons.scss */
 .btn-text:link, .btn-text:visited {
   text-decoration: none;
-  color: #28b485;
+  color: #495C83;
   display: inline-block;
   font-size: 1.6rem;
-  border-bottom: 1px solid #28b485;
+  border-bottom: 1px solid #495C83;
   padding: 4px;
   transition: all .2s; }
 
 /* line 72, scss/components/_buttons.scss */
 .btn-text:hover {
   box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.6);
-  background-color: #28b485;
+  background-color: #495C83;
   color: #fff;
   transform: translateY(-2px); }
 
@@ -238,7 +238,7 @@ body {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       /* line 29, scss/components/_card.scss */
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #55c57a, #28b485); }
+        background-image: linear-gradient(to right bottom, #A8A4CE, #495C83); }
       /* line 36, scss/components/_card.scss */
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2993ff, #5643fa); }
@@ -260,7 +260,7 @@ body {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg"); }
     /* line 66, scss/components/_card.scss */
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #55c57a, #28b485), url("../img/nat-6.jpg"); }
+      background-image: linear-gradient(to right bottom, #A8A4CE, #495C83), url("../img/nat-6.jpg"); }
     /* line 70, scss/components/_card.scss */
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #2993ff, #5643fa), url("../img/nat-7.jpg"); }
@@ -285,7 +285,7 @@ body {
       background-image: linear-gradient(to right, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     /* line 99, scss/components/_card.scss */
     .card__heading-span--2 {
-      background-image: linear-gradient(to right, rgba(85, 197, 122, 0.85), rgba(40, 180, 133, 0.85)); }
+      background-image: linear-gradient(to right, rgba(168, 164, 206, 0.85), rgba(73, 92, 131, 0.85)); }
     /* line 106, scss/components/_card.scss */
     .card__heading-span--3 {
       background-image: linear-gradient(to right, rgba(41, 147, 255, 0.85), rgba(86, 67, 250, 0.85)); }
@@ -343,7 +343,7 @@ body {
       top: 10rem; }
     /* line 21, scss/components/_composition.scss */
     .composition__photo:hover {
-      outline: 1.5rem solid #28b485;
+      outline: 1.5rem solid #495C83;
       transform: scale(1.2);
       box-shadow: 0 1.2rem 40px rgba(0, 0, 0, 0.5);
       z-index: 20; }
@@ -363,7 +363,7 @@ body {
   .feature__box--icon {
     font-size: 6rem;
     margin-bottom: 5rem;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-image: linear-gradient(to right, #C8B6E2, #495C83);
     -webkit-background-clip: text;
     color: transparent; }
   /* line 15, scss/components/_feature.scss */
@@ -373,7 +373,7 @@ body {
 /* line 1, scss/layouts/_header.scss */
 .header {
   height: 95vh;
-  background-image: linear-gradient(rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(rgba(200, 182, 226, 0.8), rgba(73, 92, 131, 0.8)), url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -442,7 +442,7 @@ body {
 /* line 7, scss/pages/_home.scss */
 .section__feature {
   padding: 20rem 0;
-  background-image: linear-gradient(rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../img/nat-4.jpg");
+  background-image: linear-gradient(rgba(200, 182, 226, 0.8), rgba(73, 92, 131, 0.8)), url("../../img/nat-4.jpg");
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
