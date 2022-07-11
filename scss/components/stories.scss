@@ -15,11 +15,37 @@
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-1rem) skewX(12deg);
+    position: relative;
   }
   &__picture{
     height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all .5s ease;
   }
   &__text{
     transform: skewX(12deg);
+  }
+  &__captions{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,30%);
+    font-size: 1.7rem;
+    color: $txt-color;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    font-weight: 500;
+    backface-visibility: hidden;
+  }
+  &:hover &__captions{
+    opacity: 1;
+    transform: translate(-50%,-50%);
+  }
+  &:hover &__picture{
+    transform: translateX(-4rem) scale(1);
+    filter: blur(4px) brightness(80%);
   }
 }

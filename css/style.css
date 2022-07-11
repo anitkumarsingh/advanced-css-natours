@@ -388,13 +388,39 @@ body {
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: translateX(-1rem) skewX(12deg); }
-  /* line 19, scss/components/stories.scss */
+    transform: translateX(-1rem) skewX(12deg);
+    position: relative; }
+  /* line 20, scss/components/stories.scss */
   .stories__picture {
-    height: 100%; }
-  /* line 22, scss/components/stories.scss */
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all .5s ease; }
+  /* line 26, scss/components/stories.scss */
   .stories__text {
     transform: skewX(12deg); }
+  /* line 29, scss/components/stories.scss */
+  .stories__captions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    font-weight: 500;
+    backface-visibility: hidden; }
+  /* line 43, scss/components/stories.scss */
+  .stories:hover .stories__captions {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  /* line 47, scss/components/stories.scss */
+  .stories:hover .stories__picture {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(4px) brightness(80%); }
 
 /* line 1, scss/layouts/_header.scss */
 .header {
