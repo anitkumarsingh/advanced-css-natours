@@ -370,6 +370,32 @@ body {
   .feature__box:hover {
     transform: translateY(-1.5rem) scale(1); }
 
+/* line 1, scss/components/stories.scss */
+.stories {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 5rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  border: 3px;
+  transform: skewX(-12deg); }
+  /* line 9, scss/components/stories.scss */
+  .stories__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-1rem) skewX(12deg); }
+  /* line 19, scss/components/stories.scss */
+  .stories__picture {
+    height: 100%; }
+  /* line 22, scss/components/stories.scss */
+  .stories__text {
+    transform: skewX(12deg); }
+
 /* line 1, scss/layouts/_header.scss */
 .header {
   height: 95vh;
@@ -453,5 +479,10 @@ body {
 /* line 18, scss/pages/_home.scss */
 .section__tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 10rem 0;
   margin-top: -9rem; }
+
+/* line 23, scss/pages/_home.scss */
+.section__stories {
+  background-color: #eee;
+  padding: 5rem 0 20rem 0; }
