@@ -527,3 +527,14 @@ body {
 .section__stories {
   padding: 5rem 0 7rem 0;
   position: relative; }
+
+/* line 27, scss/pages/_home.scss */
+.section__book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #C8B6E2, #495C83); }
+
+/* line 31, scss/pages/_home.scss */
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/nat-10.jpg");
+  background-size: cover;
+  height: 50rem; }
