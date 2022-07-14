@@ -224,9 +224,19 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
   transform: translateY(0px); }
 
-/* line 1, scss/components/_book.scss */
-.book__form {
-  padding: 5rem; }
+/* line 2, scss/components/_form.scss */
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: inherit;
+  border-bottom-color: #C8B6E2; }
+
+/* line 11, scss/components/_form.scss */
+.form__group:not(:last-child) {
+  margin-bottom: 1rem; }
 
 /* line 1, scss/components/_card.scss */
 .card {
@@ -543,3 +553,7 @@ body {
   background-size: cover;
   height: 50rem;
   box-shadow: 0, 1, 5rem 4rem rgba(0, 0, 0, 0.6); }
+  /* line 39, scss/pages/_home.scss */
+  .book__form {
+    width: 50%;
+    padding: 6rem; }

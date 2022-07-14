@@ -36,4 +36,8 @@
 	background-size: cover;
 	height: 50rem;
 	box-shadow: 0,1,5rem 4rem rgba($color-black, .6);
+	&__form{
+		width: 50%;
+		padding: 6rem;
+	}
 }
