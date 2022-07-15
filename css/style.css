@@ -230,13 +230,42 @@ body {
   padding: 1.5rem 2rem;
   border-radius: 2px;
   border: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   font-family: inherit;
-  border-bottom-color: #C8B6E2; }
+  width: 90%;
+  display: block;
+  border-bottom: 3px solid transparent;
+  color: inherit; }
+  /* line 14, scss/components/_form.scss */
+  .form__input:focus {
+    outline: none;
+    border-bottom: 3px solid green;
+    box-shadow: 0 1.5rem 4 rgba(0, 0, 0, 0.1); }
+  /* line 19, scss/components/_form.scss */
+  .form__input::-webkit-input-placeholder {
+    color: #9999; }
+  /* line 22, scss/components/_form.scss */
+  .form__input:focus:invalid {
+    border-bottom: 3px solid red; }
 
-/* line 11, scss/components/_form.scss */
+/* line 26, scss/components/_form.scss */
 .form__group:not(:last-child) {
   margin-bottom: 1rem; }
+
+/* line 29, scss/components/_form.scss */
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  display: hidden;
+  transform: translateY(-4rem); }
+
+/* line 34, scss/components/_form.scss */
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .5s ease-in-out; }
 
 /* line 1, scss/components/_card.scss */
 .card {
