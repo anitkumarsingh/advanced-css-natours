@@ -267,6 +267,50 @@ body {
   display: hidden;
   transform: translateY(-4rem); }
 
+/* line 44, scss/components/_form.scss */
+.form__radio-input {
+  opacity: 0; }
+
+/* line 47, scss/components/_form.scss */
+.form__radio-group {
+  width: 49%;
+  display: inline-block; }
+
+/* line 51, scss/components/_form.scss */
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem; }
+
+/* line 57, scss/components/_form.scss */
+.form__radio-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 5px solid #C8B6E2;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0; }
+  /* line 67, scss/components/_form.scss */
+  .form__radio-button::after {
+    content: '';
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background-color: #C8B6E2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; }
+
+/* line 81, scss/components/_form.scss */
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
+
 /* line 1, scss/components/_card.scss */
 .card {
   perspective: 1500px;
