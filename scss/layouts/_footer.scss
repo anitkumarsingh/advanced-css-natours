@@ -1,0 +1,47 @@
+.footer {
+	background-color: $color-black;
+	padding: 2rem;
+	font-size: 1.3rem;
+	color: $light-grey-color-2;
+	&__logo-box {
+		text-align: center;
+	}
+	&__logo {
+		width: 10%;
+		height: auto;
+		margin: 3rem 0;
+	}
+	&__navigation {
+    border-top: 1px solid $light-txt-color;
+    padding-top: 1rem;
+    display: inline-block;
+		&--list {
+			list-style: none;
+			&-item {
+				display: inline-block;
+				&:not(:last-child) {
+					margin-right: 1rem;
+				}
+			}
+		}
+		&--link {
+			&:link,
+			&:visited {
+				color: $light-grey-color-2;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+			&:hover,
+			&:active {
+				color: $primary-light;
+				box-shadow: 0 1.2rem 4rem rgba($color-black, 0.5);
+			}
+		}
+	}
+  &__policy{
+    border-top: 1px solid $light-txt-color;
+    padding-top: 1rem;
+    width: 80%;
+    float: left;
+  }
+}
