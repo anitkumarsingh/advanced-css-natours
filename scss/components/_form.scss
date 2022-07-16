@@ -1,4 +1,7 @@
 .form {
+	&__group:not(:last-child) {
+		margin-bottom: 1rem;
+	}
 	&__input {
 		font-size: 1.5rem;
 		padding: 1.5rem 2rem;
@@ -14,7 +17,7 @@
 		&:focus {
 			outline: none;
 			border-bottom: 3px solid $success;
-			box-shadow: 0 1.5rem 4 rgba($color-black, 0.1);
+			box-shadow: 0 1rem 2 rgba($color-black, 0.1);
 		}
 		&::-webkit-input-placeholder {
 			color: $light-grey-color-3;
@@ -23,20 +26,19 @@
 			border-bottom: 3px solid $error;
 		}
 	}
-	&__group:not(:last-child) {
-		margin-bottom: 1rem;
-	}
-	&__input:placeholder-shown + &__label{
-		opacity: 0;
-		display: hidden;
-		transform: translateY(-4rem);
-	}
+
 	&__label {
 		font-size: 1.2rem;
 		font-weight: 700;
 		margin-left: 2rem;
 		margin-top: .7rem;
 		display: block;
-		transition: all .5s ease-in-out;
+		transition: all .5s;
+	}
+
+	&__input:placeholder-shown + &__label {
+		opacity: 0;
+		display: hidden;
+		transform: translateY(-4rem);
 	}
 }
