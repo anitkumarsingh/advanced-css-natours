@@ -645,42 +645,43 @@ body {
   position: fixed;
   top: 6rem;
   right: 6rem;
-  z-index: 300; }
+  z-index: 300;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
 
-/* line 15, scss/layouts/_navigation.scss */
+/* line 16, scss/layouts/_navigation.scss */
 .navigation__background {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 6.4rem;
+  height: 6.4rem;
   border-radius: 50%;
   background-image: radial-gradient(#C8B6E2, #495C83);
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  z-index: 100;
-  transform: scale(80); }
+  z-index: 100; }
 
 /* line 26, scss/layouts/_navigation.scss */
 .navigation__nav {
   height: 100vh;
-  width: 100%;
+  width: 0;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 200; }
-  /* line 33, scss/layouts/_navigation.scss */
+  z-index: 200;
+  opacity: 0; }
+  /* line 34, scss/layouts/_navigation.scss */
   .navigation__nav-list {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     list-style: none; }
-  /* line 37, scss/layouts/_navigation.scss */
+  /* line 38, scss/layouts/_navigation.scss */
   .navigation__nav-item {
     margin: 1rem 0; }
-  /* line 41, scss/layouts/_navigation.scss */
+  /* line 42, scss/layouts/_navigation.scss */
   .navigation__nav-link:link, .navigation__nav-link:visited {
     display: inline-block;
-    padding: .8rem 2rem;
+    padding: 0.8rem 2rem;
     font-size: 3rem;
     font-weight: 300;
     text-decoration: none;
@@ -688,12 +689,21 @@ body {
     color: #fff;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
     background-size: 220%;
-    transition: all .5s; }
-  /* line 54, scss/layouts/_navigation.scss */
+    transition: all 0.5s; }
+  /* line 60, scss/layouts/_navigation.scss */
   .navigation__nav-link:hover, .navigation__nav-link:active {
     background-position: 100%;
     color: #495C83;
     transform: translateX(1rem); }
+
+/* line 68, scss/layouts/_navigation.scss */
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+/* line 71, scss/layouts/_navigation.scss */
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
 
 /* line 1, scss/pages/_home.scss */
 .section-about {
