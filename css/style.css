@@ -658,7 +658,7 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   z-index: 100;
-  transition: transform .8s; }
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 /* line 27, scss/layouts/_navigation.scss */
 .navigation__nav {
@@ -669,7 +669,7 @@ body {
   right: 0;
   z-index: 200;
   opacity: 0;
-  transition: all .8s; }
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
   /* line 36, scss/layouts/_navigation.scss */
   .navigation__nav-list {
     position: absolute;
