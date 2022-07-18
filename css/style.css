@@ -646,9 +646,11 @@ body {
   top: 6rem;
   right: 6rem;
   z-index: 300;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
 
-/* line 16, scss/layouts/_navigation.scss */
+/* line 18, scss/layouts/_navigation.scss */
 .navigation__background {
   width: 6.4rem;
   height: 6.4rem;
@@ -660,7 +662,7 @@ body {
   z-index: 100;
   transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
-/* line 27, scss/layouts/_navigation.scss */
+/* line 29, scss/layouts/_navigation.scss */
 .navigation__nav {
   height: 100vh;
   width: 0;
@@ -670,17 +672,17 @@ body {
   z-index: 200;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
-  /* line 36, scss/layouts/_navigation.scss */
+  /* line 38, scss/layouts/_navigation.scss */
   .navigation__nav-list {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     list-style: none; }
-  /* line 40, scss/layouts/_navigation.scss */
+  /* line 42, scss/layouts/_navigation.scss */
   .navigation__nav-item {
     margin: 1rem 0; }
-  /* line 44, scss/layouts/_navigation.scss */
+  /* line 46, scss/layouts/_navigation.scss */
   .navigation__nav-link:link, .navigation__nav-link:visited {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -692,20 +694,52 @@ body {
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
     background-size: 220%;
     transition: all 0.5s; }
-  /* line 62, scss/layouts/_navigation.scss */
+  /* line 64, scss/layouts/_navigation.scss */
   .navigation__nav-link:hover, .navigation__nav-link:active {
     background-position: 100%;
     color: #495C83;
     transform: translateX(1rem); }
 
-/* line 70, scss/layouts/_navigation.scss */
+/* line 72, scss/layouts/_navigation.scss */
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
 
-/* line 73, scss/layouts/_navigation.scss */
+/* line 75, scss/layouts/_navigation.scss */
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%; }
+
+/* line 79, scss/layouts/_navigation.scss */
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  /* line 82, scss/layouts/_navigation.scss */
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #000;
+    display: inline-block; }
+  /* line 90, scss/layouts/_navigation.scss */
+  .navigation__icon::before, .navigation__icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  /* line 97, scss/layouts/_navigation.scss */
+  .navigation__icon::before {
+    top: -0.8rem; }
+  /* line 100, scss/layouts/_navigation.scss */
+  .navigation__icon::after {
+    top: 0.8rem; }
+  /* line 104, scss/layouts/_navigation.scss */
+  .navigation__icon__button:hover .navigation__icon_icon::before {
+    top: -1rem; }
+  /* line 107, scss/layouts/_navigation.scss */
+  .navigation__icon__button:hover .navigation__icon_icon::after {
+    top: 1rem; }
+  /* line 110, scss/layouts/_navigation.scss */
+  .navigation__icon__checkbox:checked + .navigation__icon__button .navigation__icon__icon {
+    background-color: transparent; }
 
 /* line 1, scss/pages/_home.scss */
 .section-about {
