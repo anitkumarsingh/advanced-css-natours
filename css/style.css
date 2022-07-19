@@ -541,20 +541,7 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
-  /* line 19, scss/components/_popup.scss */
-  .popup__close:link, .popup__close:visited {
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: #9999;
-    display: inline-block;
-    line-height: 1; }
-  /* line 30, scss/components/_popup.scss */
-  .popup__close:hover {
-    color: #C8B6E2; }
-  /* line 34, scss/components/_popup.scss */
+  /* line 17, scss/components/_popup.scss */
   .popup__content {
     position: absolute;
     top: 50%;
@@ -565,23 +552,26 @@ body {
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.8);
     border-radius: 3px;
     display: table;
-    overflow: hidden; }
-  /* line 43, scss/components/_popup.scss */
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all .3s .2s; }
+  /* line 29, scss/components/_popup.scss */
   .popup__left {
     width: 33.3333%;
     display: table-cell; }
-  /* line 47, scss/components/_popup.scss */
+  /* line 33, scss/components/_popup.scss */
   .popup__right {
     width: 66.6666%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
-  /* line 53, scss/components/_popup.scss */
+  /* line 39, scss/components/_popup.scss */
   .popup__img {
     display: block;
     width: 100%;
     height: auto; }
-  /* line 58, scss/components/_popup.scss */
+  /* line 44, scss/components/_popup.scss */
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -589,6 +579,23 @@ body {
     column-gap: 4rem;
     column-rule: 1px solid #eee;
     hyphens: auto; }
+  /* line 55, scss/components/_popup.scss */
+  .popup__close:link, .popup__close:visited {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #9999;
+    display: inline-block;
+    line-height: 1; }
+  /* line 66, scss/components/_popup.scss */
+  .popup__close:hover {
+    color: #C8B6E2; }
+  /* line 70, scss/components/_popup.scss */
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
 
 /* line 1, scss/layouts/_header.scss */
 .header {
