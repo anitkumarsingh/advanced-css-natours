@@ -550,21 +550,25 @@ body {
   .popup__left {
     width: 33.3333%;
     display: table-cell; }
-  /* line 23, scss/components/_popup.scss */
+  /* line 22, scss/components/_popup.scss */
   .popup__right {
     width: 66.6666%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
-  /* line 30, scss/components/_popup.scss */
+  /* line 28, scss/components/_popup.scss */
   .popup__img {
     display: block;
     width: 100%;
     height: auto; }
-  /* line 35, scss/components/_popup.scss */
+  /* line 33, scss/components/_popup.scss */
   .popup__text {
     font-size: 1.4rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    hyphens: auto; }
 
 /* line 1, scss/layouts/_header.scss */
 .header {
