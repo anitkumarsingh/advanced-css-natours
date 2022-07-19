@@ -525,6 +525,47 @@ body {
     transform: translateX(-4rem) scale(1);
     filter: blur(4px) brightness(80%); }
 
+/* line 1, scss/components/_popup.scss */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100%;
+  z-index: 500; }
+  /* line 9, scss/components/_popup.scss */
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden; }
+  /* line 18, scss/components/_popup.scss */
+  .popup__left {
+    width: 33.3333%;
+    display: table-cell; }
+  /* line 23, scss/components/_popup.scss */
+  .popup__right {
+    width: 66.6666%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  /* line 30, scss/components/_popup.scss */
+  .popup__img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  /* line 35, scss/components/_popup.scss */
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem; }
+
 /* line 1, scss/layouts/_header.scss */
 .header {
   height: 95vh;
