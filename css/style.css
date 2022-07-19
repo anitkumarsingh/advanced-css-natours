@@ -533,8 +533,28 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
   width: 100%;
-  z-index: 500; }
-  /* line 9, scss/components/_popup.scss */
+  z-index: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s; }
+  /* line 13, scss/components/_popup.scss */
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  /* line 19, scss/components/_popup.scss */
+  .popup__close:link, .popup__close:visited {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #9999;
+    display: inline-block;
+    line-height: 1; }
+  /* line 30, scss/components/_popup.scss */
+  .popup__close:hover {
+    color: #C8B6E2; }
+  /* line 34, scss/components/_popup.scss */
   .popup__content {
     position: absolute;
     top: 50%;
@@ -546,22 +566,22 @@ body {
     border-radius: 3px;
     display: table;
     overflow: hidden; }
-  /* line 18, scss/components/_popup.scss */
+  /* line 43, scss/components/_popup.scss */
   .popup__left {
     width: 33.3333%;
     display: table-cell; }
-  /* line 22, scss/components/_popup.scss */
+  /* line 47, scss/components/_popup.scss */
   .popup__right {
     width: 66.6666%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
-  /* line 28, scss/components/_popup.scss */
+  /* line 53, scss/components/_popup.scss */
   .popup__img {
     display: block;
     width: 100%;
     height: auto; }
-  /* line 33, scss/components/_popup.scss */
+  /* line 58, scss/components/_popup.scss */
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
