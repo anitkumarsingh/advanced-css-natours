@@ -747,12 +747,12 @@ body {
 /* line 114, scss/layouts/_navigation.scss */
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
   top: 0;
-  transform: rotate(45deg); }
+  transform: rotate(135deg); }
 
 /* line 118, scss/layouts/_navigation.scss */
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
-  transform: rotate(-45deg); }
+  transform: rotate(-135deg); }
 
 /* line 1, scss/pages/_home.scss */
 .section-about {
