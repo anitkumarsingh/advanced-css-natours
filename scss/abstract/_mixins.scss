@@ -1,15 +1,15 @@
 @mixin clearfix {
-  &::after{
-    content: "";
-    display:table;
-    clear:both;
-  }
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
 }
 @mixin perfect-centering {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 // media query
@@ -32,16 +32,24 @@
 */
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media(max-width: 600px){@content}
-  }
-  @if $breakpoint == phone-port {
-    @media(max-width: 900px){@content}
-  }
-  @if $breakpoint == phone-land {
-    @media(max-width: 1200px){@content}
-  }
-  @if $breakpoint == big-desktop {
-    @media(min-width: 1800px){@content}
-  }
+	@if $breakpoint == phone {
+		@media (max-width: 37.5em) { // 600px/16
+			@content;
+		}
+	}
+	@if $breakpoint == phone-port {
+		@media (max-width: 56.25em) {   // 900px
+			@content;
+		}
+	}
+	@if $breakpoint == phone-land {
+		@media (max-width: 75em) { // 1200px
+			@content;
+		}
+	}
+	@if $breakpoint == big-desktop {
+		@media (min-width: 112.5em) {   // 1800px
+			@content;
+		}
+	}
 }

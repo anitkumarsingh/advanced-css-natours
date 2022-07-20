@@ -692,7 +692,7 @@ body {
     margin-bottom: 8rem; }
   /* line 2, scss/abstract/_mixins.scss */
   .row::after {
-    content: "";
+    content: '';
     display: table;
     clear: both; }
   /* line 9, scss/layouts/_grid.scss */
