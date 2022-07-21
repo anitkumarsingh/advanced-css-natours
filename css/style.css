@@ -75,7 +75,12 @@ html {
 
 /* line 22, scss/base/_base.scss */
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    /* line 22, scss/base/_base.scss */
+    body {
+      padding: 0; } }
 
 /* line 1, scss/base/_typography.scss */
 body {
@@ -83,16 +88,15 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
-/* line 10, scss/base/_typography.scss */
+/* line 9, scss/base/_typography.scss */
 .primary-heading {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 4rem; }
-  /* line 16, scss/base/_typography.scss */
+  /* line 15, scss/base/_typography.scss */
   .primary-heading--main {
     display: block;
     font-size: 6rem;
@@ -101,15 +105,35 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
-  /* line 26, scss/base/_typography.scss */
+    @media (max-width: 56.25em) {
+      /* line 15, scss/base/_typography.scss */
+      .primary-heading--main {
+        font-size: 5rem;
+        letter-spacing: 1rem; } }
+    @media (max-width: 37.5em) {
+      /* line 15, scss/base/_typography.scss */
+      .primary-heading--main {
+        font-size: 4rem;
+        letter-spacing: 1rem; } }
+  /* line 33, scss/base/_typography.scss */
   .primary-heading--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
+    @media (max-width: 56.25em) {
+      /* line 33, scss/base/_typography.scss */
+      .primary-heading--sub {
+        font-size: 1.5rem;
+        letter-spacing: .7rem; } }
+    @media (max-width: 37.5em) {
+      /* line 33, scss/base/_typography.scss */
+      .primary-heading--sub {
+        font-size: 1rem;
+        letter-spacing: .4rem; } }
 
-/* line 34, scss/base/_typography.scss */
+/* line 49, scss/base/_typography.scss */
 .secondary-heading {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -120,21 +144,29 @@ body {
   background-clip: text;
   color: transparent;
   transition: all .2s; }
-  /* line 45, scss/base/_typography.scss */
+  /* line 60, scss/base/_typography.scss */
   .secondary-heading:hover {
     transform: skewY(5deg) skewX(10deg) scale(1.1);
     text-shadow: 0.5rem 2rem 6rem rgba(0, 0, 0, 0.4); }
+  @media (max-width: 56.25em) {
+    /* line 49, scss/base/_typography.scss */
+    .secondary-heading {
+      font-size: 3rem; } }
+  @media (max-width: 56.25em) {
+    /* line 49, scss/base/_typography.scss */
+    .secondary-heading {
+      font-size: 2.5rem; } }
 
-/* line 50, scss/base/_typography.scss */
+/* line 71, scss/base/_typography.scss */
 .tertiary-heading {
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 700; }
 
-/* line 55, scss/base/_typography.scss */
+/* line 76, scss/base/_typography.scss */
 .paragraph {
   font-size: 1.6rem; }
-  /* line 57, scss/base/_typography.scss */
+  /* line 78, scss/base/_typography.scss */
   .paragraph:not(:last-child) {
     margin-bottom: 5rem; }
 

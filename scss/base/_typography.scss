@@ -4,7 +4,6 @@ body {
 	font-size: $default-font-size;
 	line-height: 1.7;
 	color: $light-txt-color;
-	padding: 3rem;
 }
 
 .primary-heading {
@@ -21,6 +20,14 @@ body {
 		animation-name: moveInLeft;
 		animation-duration: 1s;
 		animation-timing-function: ease-out;
+		@include respond(phone-port){
+			font-size: 5rem;
+			letter-spacing: 1rem;
+		}
+		@include respond(phone){
+			font-size: 4rem;
+			letter-spacing: 1rem;
+		}
 	}
 
 	&--sub {
@@ -29,6 +36,14 @@ body {
 		font-weight: 700;
 		letter-spacing: 1.75rem;
 		animation: moveInRight 1s ease-out;
+		@include respond(phone-port){
+			font-size: 1.5rem;
+			letter-spacing: .7rem;
+		}
+		@include respond(phone){
+			font-size: 1rem;
+			letter-spacing: .4rem;
+		}
 	}
 }
 .secondary-heading{
@@ -45,6 +60,12 @@ body {
 	&:hover{
 		transform: skewY(5deg) skewX(10deg) scale(1.1);
 		text-shadow: .5rem 2rem 6rem rgba($color-black, .4);
+	}
+	@include respond(phone-port){
+		font-size: 3rem;
+	}
+	@include respond(phone-port){
+		font-size: 2.5rem;
 	}
 }
 .tertiary-heading{
