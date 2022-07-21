@@ -60,8 +60,20 @@ dark green:#28b485
 /* line 9, scss/base/_base.scss */
 html {
   font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    /* line 9, scss/base/_base.scss */
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    /* line 9, scss/base/_base.scss */
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    /* line 9, scss/base/_base.scss */
+    html {
+      font-size: 75%; } }
 
-/* line 13, scss/base/_base.scss */
+/* line 22, scss/base/_base.scss */
 body {
   box-sizing: border-box; }
 
